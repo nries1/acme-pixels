@@ -1,0 +1,81 @@
+html {
+    font-family: 'Avenir'
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    padding: 0 0 20px 0 ;
+}
+#controls-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+button {
+    margin-bottom: 10px;
+    height: 30px;
+    background-color:whitesmoke;
+    width: 120px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.color {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid;
+    margin: 5px;
+}
+
+#grid {
+    width: 25rem;
+    height: 25rem;
+}
+
+#colors-container {
+    display: flex;
+}
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color:blue;
+}
+.green {
+    background-color:green;
+}
+.yellow {
+    background-color:yellow;
+}
+.lightblue {
+    background-color: lightblue;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.cell {
+    flex-grow: 1;
+    /* border: 1px solid; */
+}
+.selected {
+    width: 2rem;
+    height: 2rem;
+}
+.color:hover {
+    cursor: pointer;
+}
+.cell:hover {
+    cursor: pointer;
+}
+#canvas-container {
+    margin-left: 30px;
+}

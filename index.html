@@ -7,10 +7,22 @@
         <h1>Acme Pixels</h1>
         <div class='main-container'>
             <div id="controls-container">
-
+                <h2>Controls</h2>
+                <button onclick="addRow()">Add a Row</button>
+                <button onclick="removeRow()">Remove a Row</button>
+                <button onclick="addColumn()">Add a Column</button>
+                <button onclick="removeColumn()">Remove a Column</button>
+                <div id="colors-container">
+                    <div data-color="red" onclick="toggleColorSelect(this)" data-selected="false" class="color red"></div>
+                    <div data-color="blue" onclick="toggleColorSelect(this)" data-selected="false" class="color blue"></div>
+                    <div data-color="green" onclick="toggleColorSelect(this)" data-selected="false" class="color green"></div>
+                    <div data-color="yellow" onclick="toggleColorSelect(this)" data-selected="false" class="color yellow"></div>
+                    <div data-color="lightblue" onclick="toggleColorSelect(this)" data-selected="false" class="color lightblue"></div>
+                </div>
             </div>
-            <div>
-                
+            <div id="canvas-container">
+                <h2>Canvas</h2>
+                <div id="grid"></div>
             </div>
         </div>
         <script type="text/javascript" src="javascript.js"></script>
